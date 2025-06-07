@@ -1,0 +1,24 @@
+[project]
+name = 'Blockchain-Based-Textiles-Fiber-Traceability-System'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.origin-tracking]
+path = 'contracts/origin-tracking.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.processing-documentation]
+path = 'contracts/processing-documentation.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
